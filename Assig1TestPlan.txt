@@ -7,12 +7,22 @@ CounterStringTest->
 ThreadStringTest->
 CounterNegativeNumTest->
 ThreadNegativeNumTest->
+GoodValueIntTest->
+GoodValueNegitiveIntTest->
+GoodValueMaxStringTest->
+GoodValueFloatTest->
+GoodValueNegitiveNumberTest->
+BadValueIntTest->
+BadValueNegitiveIntTest->
+BadValueMaxStringTest->
+BadValueFloatTest->
+BadValueNegitiveNumberTest->
 NullTest->
 MissingArgsTest->
 ExtraArgsTest->
 SmallNumsTest -> checks if numbs under 100 are handled
-SmallNumsCountInvalidInputTest -> 
-OutputHasThreeDecimalsTest
+SmallNumsCountInvalidInputTest -> check if the y,n input after a <100 smallnum works with invalid input.
+OutputHasThreeDecimalsTest-> Output displayed to user is 3 decimal places long.
 ArgumentDisplayTest -> Checks to see if "good" and "bad" are displayed in the output correctly
 ThreadOffByOneIteraionTest->
 ThreadDisplayTest->
