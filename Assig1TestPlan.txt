@@ -1,13 +1,23 @@
 Tests:
-CounterFloatTest
-ThreadFloatTest
-CounterMaxIntTest
-ThreadMaxIntTest
-CounterStringTest
-ThreadStringTest
-CounterNegativeNumTest
-ThreadNegativeNumTest
-NullTest
-MissingArgsTest
-ExtraArgsTest
-SmallNumsTest
+CounterFloatTest->
+ThreadFloatTest->
+CounterMaxIntTest->
+ThreadMaxIntTest->
+CounterStringTest->
+ThreadStringTest->
+CounterNegativeNumTest->
+ThreadNegativeNumTest->
+NullTest->
+MissingArgsTest->
+ExtraArgsTest->
+SmallNumsTest -> checks if numbs under 100 are handled
+SmallNumsCountInvalidInputTest -> 
+OutputHasThreeDecimalsTest
+ArgumentDisplayTest -> Checks to see if "good" and "bad" are displayed in the output correctly
+ThreadOffByOneIteraionTest->
+ThreadDisplayTest->
+InvalidArgsReasonTest -> 
+ThreadPerformanceTest->
+
+
+We appear to be making more than 3 tests per requirement?  Should we be combining tests?  Is it a problem with the requirements?  Is it another reason?
