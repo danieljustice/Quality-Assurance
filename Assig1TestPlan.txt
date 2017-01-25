@@ -1,33 +1,33 @@
 Tests:
-CounterFloatTest->
-ThreadFloatTest->
-CounterMaxIntTest->
-ThreadMaxIntTest->
-CounterStringTest->
-ThreadStringTest->
-CounterNegativeNumTest->
-ThreadNegativeNumTest->
-GoodValueIntTest->
-GoodValueNegitiveIntTest->
-GoodValueMaxStringTest->
-GoodValueFloatTest->
-GoodValueNegitiveNumberTest->
-BadValueIntTest->
-BadValueNegitiveIntTest->
-BadValueMaxStringTest->
-BadValueFloatTest->
-BadValueNegitiveNumberTest->
-NullTest->
-MissingArgsTest->
-ExtraArgsTest->
-SmallNumsTest -> checks if numbs under 100 are handled
-SmallNumsCountInvalidInputTest -> check if the y,n input after a <100 smallnum works with invalid input.
-OutputHasThreeDecimalsTest-> Output displayed to user is 3 decimal places long.
-ArgumentDisplayTest -> Checks to see if "good" and "bad" are displayed in the output correctly
-ThreadOffByOneIteraionTest->
-ThreadDisplayTest->
-InvalidArgsReasonTest -> 
-ThreadPerformanceTest->
+Counter-Float-Test ->
+Thread-Float-Test ->
+Counter-Max-Int-Test ->
+Thread-Max-Int-Test ->
+Counter-String-Test ->
+Thread-String-Test ->
+Counter-Negative-Num-Test ->
+Thread-Negative-Num-Test ->
+Good-Value-Int-Test ->
+Good-Value-Negitive-Int-Test ->
+Good-Value-Max-String-Test ->
+Good-Value-Float-Test ->
+Good-Value-Negitive-Number-Test ->
+Bad-Value-Int-Test ->
+Bad-Value-Negitive-Int-Test ->
+Bad-Value-Max-String-Test ->
+Bad-Value-Float-Test ->
+Bad-Value-Negitive-Number-Test ->
+Null-Test ->
+Missing-Args-Test ->
+Extra-Args-Test ->
+Small-Nums-Test -> checks if numbs under 100 are handled
+Small-Nums-Count-Invalid-Input-Test -> check if the y,n input after a <100 smallnum works with invalid input.
+Output-Has-Three-Decimals-Test -> Output displayed to user is 3 decimal places long.
+Argument-Display-Test -> Checks to see if "good" and "bad" are displayed in the output correctly
+Thread-Off-By-One-Iteraion-Test ->
+Thread-Display-Test ->
+Invalid-Args-Reason-Test -> 
+Thread-Performance-Test ->
 
 
 We appear to be making more than 3 tests per requirement?  Should we be combining tests?  
