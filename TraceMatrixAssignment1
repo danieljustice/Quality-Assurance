@@ -1,24 +1,47 @@
 Requirement 1 - FUN-BASIC-CALC - The system shall calculate the results of switching or staying, according to the defined Monty Hall problem, for "number of times" iterations.
--	.
+-	Display-SwitchStay-Results-Test
+-	SwitchStay-Accurate-Iterations-Test
 
 Requirement 2 - FUN-THREADS - The system shall allocate all work proportionally to threads. That is, the number of iterations per thread should never have a difference of more than one iteration compared to any other thread. The number of iterations allocated to each thread shall be displayed to the user before calculating.
--	.
+-	Thread-Off-By-One-Test
+-	Thread-Display-Test
 
 Requirement 3 - FUN-DISPLAY-RESULTS - After calculating, the system shall display this information to the user after calculating, using percentages with up to three places after the decimal, and then stop execution. This display shall print out the passed-in String versions of the "good" and "bad" options as defined in the arguments.
--	.
+-	Output-Has-Three-Decimals-Test
+-	Argument-Display-Test
 
 Requirement 4 - FUN-ARGS-NUMBER - The system shall accept four arguments from the command line, in the following order: good option, bad option, number of times, number of threads. If there are fewer or more than four arguments, the system will display the usage information for the program and shut down.
--	.
+-	Missing-Args-Test
+-	Extra-Args-Test
 
 Requirement 5 - FUN-ARGS-INVALID - If an argument is invalid for any reason (such as, the arguments for the number of times or number of threads cannot be parsed as a positive integer), then the system shall explain the reason that it cannot run and will shut down. At no point shall the system display a Java exception or stack trace directly to the user.
--	.
-
-
+-	Counter-Float-Test
+-	Thread-Float-Test
+-	Counter-Max-Int-Test
+-	Thread-Max-Int-Test
+-	Counter-String-Test
+-	Thread-String-Test
+-	Counter-Negative-Num-Test
+-	Thread-Negative-Num-Test
+-	Good-Value-Int-Test
+-	Good-Value-Negative-Int-Test
+-	Good-Value-Max-String-Test
+-	Good-Value-Float-Test
+-	Good-Value-Negative-Number-Test
+-	Bad-Value-Int-Test
+-	Bad-Value-Negative-Int-Test
+-	Bad-Value-Max-String-Test
+-	Bad-Value-Float-Test
+-	Bad-Value-Negitive-Number-Test
+-	Null-Test
+-	Invalid-Args-Reason-Test
+-	
 Requirement 6 - FUN-SMALL-NUM - If the "number of times" argument is less than 100, the system shall issue a warning and ask the user if they wish to continue.
--	.
+-	Small-Nums-Test
 
 Requirement 7 -FUN-SMALL-NUM-CONT - When asking the user if they wish to continue, the system shall be case-insensitive. That is, the user may enter either "Y" or "y" to indicate yes, or either "N" or "n" to indicate no. If invalid input (i.e., anything other than "Y", "y", "N", or "n") is entered, the user shall be asked again to enter their selection. This shall be repeated as many times as necessary until the user enters valid input.
--	.
+-	Small-Num-Cont-Invalid-Input-Test
+-	
 
 Requirement 8 - NF-PERFORMANCE - For any given number of threads n, the system shall run faster (that is, shall complete execution and display results in a smaller amount of time), with a higher n.
--	.
+-	Thread-Perfomance-Test
