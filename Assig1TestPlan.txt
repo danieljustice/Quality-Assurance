@@ -21,10 +21,10 @@ Null-Test ->
 Missing-Args-Test ->
 Extra-Args-Test ->
 Small-Nums-Test -> checks if numbs under 100 are handled
-Small-Nums-Count-Invalid-Input-Test -> check if the y,n input after a <100 smallnum works with invalid input.
+Small-Nums-Cont-Invalid-Input-Test -> check if the y,n input after a <100 smallnum works with invalid input.
 Output-Has-Three-Decimals-Test -> Output displayed to user is 3 decimal places long.
 Argument-Display-Test -> Checks to see if "good" and "bad" are displayed in the output correctly
-Thread-Off-By-One-Iteraion-Test ->
+Thread-Off-By-One-Test ->
 Thread-Display-Test ->
 Invalid-Args-Reason-Test -> 
 Thread-Performance-Test ->
