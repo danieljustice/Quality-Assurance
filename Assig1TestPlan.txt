@@ -28,6 +28,8 @@ Thread-Off-By-One-Test ->
 Thread-Display-Test ->
 Invalid-Args-Reason-Test -> 
 Thread-Performance-Test ->
+Display-SwitchStay-Results-Test ->
+SwitchStay-Accurate-Iterations-Test ->
 
 
 We appear to be making more than 3 tests per requirement?  Should we be combining tests?  
