@@ -1,4 +1,4 @@
-# Requirement 1 - FUN-BASIC-CALC - The system shall calculate the results of switching or staying, according to the defined Monty Hall problem, for "number of times" iterations.
+Requirement 1 - FUN-BASIC-CALC - The system shall calculate the results of switching or staying, according to the defined Monty Hall problem, for "number of times" iterations.
 -	Display-SwitchStay-Results-Test
 -	SwitchStay-Accurate-Iterations-Test
 
