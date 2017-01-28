@@ -28,29 +28,33 @@ EXECUTION STEPS:
   1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
 POSTCONDITIONS: The user verifies that the iterations per thread is displayed for the correct thread count.
 
-IDENTIFIER:
+IDENTIFIER: Output-Has-Three-Decimals-Test
 TEST CASE: 
-PRECONDITIONS:
+PRECONDITIONS: The user has ran the program.
 EXECUTION STEPS:
-POSTCONDITIONS:
+  1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
+POSTCONDITIONS: The user verifies that the output display is rounded up to three decimal places.
 
-IDENTIFIER:
+IDENTIFIER:	Argument-Display-Test
 TEST CASE: 
-PRECONDITIONS:
+PRECONDITIONS: The user has ran the program.
 EXECUTION STEPS:
-POSTCONDITIONS:
+    1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
+POSTCONDITIONS: The user verifies that the output display contains the two passed in string versions of "Good" and "Bad". In the example input, this would result in Goat, and Car being displayed.
 
-IDENTIFIER:
+IDENTIFIER:	Missing-Args-Test
 TEST CASE: 
-PRECONDITIONS:
-EXECUTION STEPS:
-POSTCONDITIONS:
+PRECONDITIONS: The user has ran the program.
+EXECUTION STEPS: The user inputs an invalid number of arguments for the program that are less than four.
+                  - Examples include, 3,2,1, and 0.
+POSTCONDITIONS: The system will display the useage information for the program and shut down.
 
-IDENTIFIER:
+IDENTIFIER:	Extra-Args-Test
 TEST CASE: 
-PRECONDITIONS:
-EXECUTION STEPS:
-POSTCONDITIONS:
+PRECONDITIONS: The user has ran the program.
+EXECUTION STEPS: The user inputs an invalid number of arguments for the program that are greater than four.
+                  - Examples include, 5,6,500.
+POSTCONDITIONS: The system will display the useage information for the program and shut down.
 
 IDENTIFIER:
 TEST CASE: 
