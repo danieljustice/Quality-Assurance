@@ -56,29 +56,45 @@ EXECUTION STEPS: The user inputs an invalid number of arguments for the program 
                   - Examples include, 5,6,500.
 POSTCONDITIONS: The system will display the useage information for the program and shut down.
 
+//-------------------------------TODO
+--------------------- I skipped invalid arguments due to not knowing what to do yet.
 IDENTIFIER:
 TEST CASE: 
 PRECONDITIONS:
 EXECUTION STEPS:
 POSTCONDITIONS:
+---------------------------------------------------------------------------------
+//--------------------------------END TODO
 
-IDENTIFIER:
+IDENTIFIER: Small-Nums-Test
 TEST CASE: 
-PRECONDITIONS:
+PRECONDITIONS: The user has ran the program.
 EXECUTION STEPS:
-POSTCONDITIONS:
+  1. The user inputs an "iterations" argument less than 100.
+  2. The rest of the input for the program arrguments will be correct.
+POSTCONDITIONS: The program shal issue a warning and ask the user if they wish to continue.
 
-IDENTIFIER:
+IDENTIFIER: Small-Num-Cont-Invalid-Input-Test
 TEST CASE: 
-PRECONDITIONS:
+PRECONDITIONS: The user has ran the program.
 EXECUTION STEPS:
-POSTCONDITIONS:
+  1. Enter the correct command line arguments for GoodOption, BadOption, Threads, and enter in
+     an iteration count of 100 or less. Example: Goat Car 98 5
+  2. The user is prompted for "Y" or "N" input for continuing with less than 100 iterations.
+  3. The user inputs invalid data for this option.
+POSTCONDITIONS: Upon each invalid input, the program continues to ask the user for "Y" or "N" arguments.
 
-IDENTIFIER:
+IDENTIFIER: Small-Num-Cont-Valid-Input-Test
 TEST CASE: 
-PRECONDITIONS:
+PRECONDITIONS: The user has ran the program.
 EXECUTION STEPS:
-POSTCONDITIONS:
+  1. Enter the correct command line arguments for GoodOption, BadOption, Threads, and enter in
+     an iteration count of 100 or less. Example: Goat Car 98 5
+  2. The user is prompted for "Y" or "N" input for continuing with less than 100 iterations.
+  3. The user inputs "Y","N","y",or "n" for this option. 
+POSTCONDITIONS: 
+  1. If the user selects "Y" or "y", the program will continue to execute.
+  2. If the user selects "N" or "n", the program will exit.
 
 IDENTIFIER:
 TEST CASE: 
