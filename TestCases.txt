@@ -1,14 +1,17 @@
-IDENTIFIER:
+IDENTIFIER:	Display-SwitchStay-Results-Test
 TEST CASE: 
-PRECONDITIONS:
-EXECUTION STEPS:
-POSTCONDITIONS:
+PRECONDITIONS: The user has ran the program.
+EXECUTION STEPS: 
+  1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
+POSTCONDITIONS: The switch stay result has been displayed to the user.
 
-IDENTIFIER:
+IDENTIFIER: SwitchStay-Accurate-Iterations-Test
 TEST CASE: 
-PRECONDITIONS:
+PRECONDITIONS: The user has ran the program.
 EXECUTION STEPS:
-POSTCONDITIONS:
+  1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
+  2. The switch stay result has been displayed to the user.
+POSTCONDITIONS: The user verifies that the iterations they entered equal the displayed iterations.
 
 IDENTIFIER:
 TEST CASE: 
