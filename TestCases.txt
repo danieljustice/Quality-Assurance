@@ -13,17 +13,20 @@ EXECUTION STEPS:
   2. The switch stay result has been displayed to the user.
 POSTCONDITIONS: The user verifies that the iterations they entered equal the displayed iterations.
 
-IDENTIFIER:
+IDENTIFIER: Thread-Off-By-One-Test
 TEST CASE: 
-PRECONDITIONS:
+PRECONDITIONS: The user has ran the program.
 EXECUTION STEPS:
-POSTCONDITIONS:
+  1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
+  2. The thread number and iterations per thread are displayed to the user.
+POSTCONDITIONS: The user verifies that the iterations per thread is never off by more than one in comparison to other threads.
 
-IDENTIFIER:
+IDENTIFIER: Thread-Display-Test
 TEST CASE: 
-PRECONDITIONS:
+PRECONDITIONS: The user has ran the program.
 EXECUTION STEPS:
-POSTCONDITIONS:
+  1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
+POSTCONDITIONS: The user verifies that the iterations per thread is displayed for the correct thread count.
 
 IDENTIFIER:
 TEST CASE: 
