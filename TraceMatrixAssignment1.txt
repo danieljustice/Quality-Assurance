@@ -15,27 +15,12 @@ Requirement 4 - FUN-ARGS-NUMBER - The system shall accept four arguments from th
 -	Extra-Args-Test
 
 Requirement 5 - FUN-ARGS-INVALID - If an argument is invalid for any reason (such as, the arguments for the number of times or number of threads cannot be parsed as a positive integer), then the system shall explain the reason that it cannot run and will shut down. At no point shall the system display a Java exception or stack trace directly to the user.
--	Counter-Float-Test
--	Thread-Float-Test
--	Counter-Max-Int-Test
--	Thread-Max-Int-Test
--	Counter-String-Test
--	Thread-String-Test
--	Counter-Negative-Num-Test
--	Thread-Negative-Num-Test
--	Good-Value-Int-Test
--	Good-Value-Negative-Int-Test
--	Good-Value-Max-String-Test
--	Good-Value-Float-Test
--	Good-Value-Negative-Number-Test
--	Bad-Value-Int-Test
--	Bad-Value-Negative-Int-Test
--	Bad-Value-Max-String-Test
--	Bad-Value-Float-Test
--	Bad-Value-Negitive-Number-Test
--	Null-Test
+-	Counter-Invalid-Args-Test
+-	Thread-Invalid-Args-Test
+- Good-Value-Invalid-Args-Test
+- Bad-Value-Invalid-Args-Test
 -	Invalid-Args-Reason-Test
--	
+
 Requirement 6 - FUN-SMALL-NUM - If the "number of times" argument is less than 100, the system shall issue a warning and ask the user if they wish to continue.
 -	Small-Nums-Test
 
