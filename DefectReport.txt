@@ -1,10 +1,12 @@
  
  IDENTIFIER: DEFECT-1
- SUMMARY:
- DESCRIPTION:
+ SUMMARY: Program exits with a stack trace when invalid args are passed into Thread argument.
+ DESCRIPTION: When a non-numerical argument is passed into the Threads argument the program breaks and exits with a stack trace. Per the                 requirements the program should notify the user of the invalid argument and then exit gracefully.
  REPRODUCTION STEPS:
- EXPECTED BEHAVIOR:
- OBSERVED BEHAVIOR:
+          1) Run program with "java -jar .\GoatGoatCar.jar good bad 1000 g" or "java -jar .\GoatGoatCar.jar good bad 1000 1000000000000000"
+          2) Program will exit with a stack trace
+ EXPECTED BEHAVIOR:The program will prompt the user that an invalid argument was inputed and then gracefully exit.
+ OBSERVED BEHAVIOR:The program did not prompt the user and exited with a stack trace.
   
  IDENTIFIER: DEFECT-2
  SUMMARY:
