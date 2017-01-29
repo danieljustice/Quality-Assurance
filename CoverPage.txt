@@ -4,15 +4,17 @@ CS 1632 - DELIVERABLE 1: Test Plan and Traceability Matrix
 
 Introduction
 
-These collected doccuments are a compilation of test cases and requirerments for testing the Monty Hall Problem, "GoatGoatCar".
-We have been given the assignment to test the program "GoatGoatCar" as it was given to us. This means we have to preform Blackbox testing on the program. Overall, the requirmentes for this program are very strait forward. Designing a test plan was not too difficult but we did have a few concerts while creating an accurate plan.
+These collected documents are a compilation of test cases and requirements for testing the Monty Hall Problem, "GoatGoatCar".
+We have been given the assignment to test the program "GoatGoatCar" as it was given to us. This means we must preform Blackbox testing on the program. Overall, the requirements for this program are very strait forward. Designing a test plan was not too difficult but we did have a few concerts while creating an accurate plan.
 
-To start off, we were unsure how many test cases we should have planned out for each of the four input variables. We wanted to test all the different types of invalid input for each individual variable and then have seperate test cases for each one. In the end, we decided to combine all the different types into one specifc test case for each variable. An example of this is "COUNTER-INVALID-INPUT-TEST". In the test, we list the types of invalid input that we will be going through for this test.
+To start off, we were unsure how many test cases we should have planned for each of the four input variables. We wanted to test all the different types of invalid input for each individual variable and then have separate test cases for each one. In the end, we decided to combine all the different types into one specific test case for each variable. An example of this is "COUNTER-INVALID-INPUT-TEST". In the test, we list the types of invalid input that we will be going through for this test.
 
 Another issue we had arguments wise, is that we were unable to properly manually test some of the invalid arguments. For example, a max string length of 2.14 Billion is very hard to test. As well as the empty string. 
 
-Another blackbox issue we had was that it is very hard to test all of the number values from one to 100 in the iterations test. 
-We wanted to build a script to test all of the values for this test, but we think that it might be out of the scope of automated testing.
+Another blackbox issue we had was that it is very hard to test all the number values from one to 100 in the iterations test. 
+We wanted to build a script to test all the values for this test, but we think that it might be out of the scope of automated testing.
 
------------note any concerns or difficulties you may have had or anticipate with the testing process. 
------------You should also note why you considered certain test cases, how you thought of edge cases, etc.
+For most of our edge and corner cases, we made sure to test the min and max values of both integer and strings.
+Also, we decided that exhaustively testing a lot of the options was another way to make sure there were no issues throughout the ranges of variables.
+Since this is supposed to be a manual testing assignment, we decided to not create a script to exhaustively test all edge and corner cases.
+
