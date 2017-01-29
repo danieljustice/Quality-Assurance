@@ -120,6 +120,13 @@ POSTCONDITIONS:
   1. If the user selects "Y" or "y", the program will continue to execute.
   2. If the user selects "N" or "n", the program will exit.
 
+IDENTIFIER: Thread-Perfomance-Test
+TEST CASE: Test to ensure that program runs faster when more threads are used
+PRECONDITIONS: The user has ran the program.
+EXECUTION STEPS: CURRENTLY UNSURE HOW TO APPROPRIATELY BLACK BOX TEST A SPEED COMPARISON
+POSTCONDITIONS: Program exits gracefully with statistics correctly shown.
+
+
 IDENTIFIER:
 TEST CASE: 
 PRECONDITIONS:
