@@ -19,7 +19,6 @@ Requirement 5 - FUN-ARGS-INVALID - If an argument is invalid for any reason (suc
 -	Thread-Invalid-Args-Test
 - Good-Value-Invalid-Args-Test
 - Bad-Value-Invalid-Args-Test
--	Invalid-Args-Reason-Test
 
 Requirement 6 - FUN-SMALL-NUM - If the "number of times" argument is less than 100, the system shall issue a warning and ask the user if they wish to continue.
 -	Small-Nums-Test
