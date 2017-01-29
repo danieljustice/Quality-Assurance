@@ -58,15 +58,37 @@ EXECUTION STEPS: The user inputs an invalid number of arguments for the program 
                   - Examples include, 5,6,500.
 POSTCONDITIONS: The system will display the useage information for the program and shut down.
 
-//-------------------------------TODO
---------------------- I skipped invalid arguments due to not knowing what to do yet.
-IDENTIFIER:
-TEST CASE: 
-PRECONDITIONS:
+IDENTIFIER: Counter-Invalid-Args-Test
+TEST CASE: Ensures that the program can handle invalid arguments for the Counter Argument and exit gracefully.
+PRECONDITIONS: The user has ran the program.
+EXECUTION STEPS: 
+    1. The user inputs a valid number of arguments.  All arguments are valid except for the Counter argument.
+    2. Continue restarting the program with invalid Counter arguments. Examples of invalid Counter arguments are: -1, Goat, 100000000000000000
+POSTCONDITIONS: The program will notify the user of the invalid argument and why it is invalid. It will then exit.
+
+IDENTIFIER: Thread-Invalid-Args-Test
+TEST CASE: Ensures that the program can handle invalid arguments for the Counter Argument and exit gracefully.
+PRECONDITIONS:The user has ran the program.
 EXECUTION STEPS:
-POSTCONDITIONS:
----------------------------------------------------------------------------------
-//--------------------------------END TODO
+    1. The user inputs a valid number of arguments.  All arguments are valid except for the Thread argument.
+    2. Continue restarting the program with invalid Thread arguments. Examples of invalid Thread arguments are: -1, Goat, 100000000000000000
+POSTCONDITIONS: The program will notify the user of the invalid argument and why it is invalid. It will then exit.
+
+IDENTIFIER:Good-Invalid-Args-Test
+TEST CASE: Ensure that the Good argument can handle potentially invalid args
+PRECONDITIONS: The user has ran the program.
+EXECUTION STEPS:
+    1. The user inputs a valid number of arguments.  All arguments are valid except for the Good argument.
+    2. Continue restarting the program with potentially invalid Good arguments. Examples of potentially invalid Good arguments are: -1, 1.1, 1.1.1, \n, System.out.print("woot"), System.exit(0), 100000000000000000
+POSTCONDITIONS: The program will notify the user of the invalid argument and why it is invalid. It will then exit.
+
+IDENTIFIER:Bad-Invalid-Args-Test
+TEST CASE: Ensure that the Bad argument can handle potentially invalid args
+PRECONDITIONS: The user has ran the program.
+EXECUTION STEPS:
+    1. The user inputs a valid number of arguments.  All arguments are valid except for the Bad argument.
+    2. Continue restarting the program with potentially invalid Bad arguments. Examples of potentially invalid Bad arguments are: -1, 1.1, 1.1.1, \n, System.out.print("woot"), System.exit(0), 100000000000000000
+POSTCONDITIONS: The program will notify the user of the invalid argument and why it is invalid. It will then exit.
 
 IDENTIFIER: Small-Nums-Test
 TEST CASE: Ensures that the program properly prompts the user if the number of iterations is 100 or less.
