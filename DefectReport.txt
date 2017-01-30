@@ -9,18 +9,21 @@
  OBSERVED BEHAVIOR:The program did not prompt the user and exited with a stack trace.
   
  IDENTIFIER: DEFECT-2
- SUMMARY:
- DESCRIPTION:
+ SUMMARY: Program displays reccomended minumin when the user enters "100" iterations.
+ DESCRIPTION: When the user specificly enters the number "100" for the iteration input, the program displays a message to the user to enter in a number that is at least 100. This is an off by 1 error.
  REPRODUCTION STEPS:
- EXPECTED BEHAVIOR:
- OBSERVED BEHAVIOR:
+         1) Run program with "java -jar .\GoatGoatCar.jar good bad 100 10"
+ EXPECTED BEHAVIOR: The program should display the correct final output after entering 100.
+ OBSERVED BEHAVIOR: The program displays to the user the 
   
  IDENTIFIER: DEFECT-3
- SUMMARY:
- DESCRIPTION:
+ SUMMARY: Program does not accept captial 'N' input option.
+ DESCRIPTION: When the program prompts the user for the leters 'N' or 'Y' after inputing an iteration lower than 100, if the user uses capital 'N' it does not accept the input. An error is displayed stating "Sorry, I don't know what N means!"
  REPRODUCTION STEPS:
- EXPECTED BEHAVIOR:
- OBSERVED BEHAVIOR:
+        1) Run program with "java -jar .\GoatGoatCar.jar good bad 90 10"
+        2) When prompted for 'Y' or 'N' input, input the character 'N'.
+ EXPECTED BEHAVIOR: The program should quit.
+ OBSERVED BEHAVIOR: An error message is displayed to the user. The error explains that the program does not know how to handle the uppercase 'N' character.
   
  IDENTIFIER:DEFECT-4
  SUMMARY:
