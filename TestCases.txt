@@ -1,13 +1,13 @@
 IDENTIFIER:	Display-SwitchStay-Results-Test
 TEST CASE: Test program that it can complete when given a basic input.
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS: 
   1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
 POSTCONDITIONS: The switch stay result has been displayed to the user.
 
 IDENTIFIER: SwitchStay-Accurate-Iterations-Test
 TEST CASE: Ensures that as many iterations are being completed as the user specifies
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
   1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
   2. The switch stay result has been displayed to the user.
@@ -15,7 +15,7 @@ POSTCONDITIONS: The user verifies that the iterations they entered equal the dis
 
 IDENTIFIER: Thread-Off-By-One-Test
 TEST CASE: Ensures that threading is implemented correctly and that one thread is not bearing all the weight.
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
   1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
   2. The thread number and iterations per thread are displayed to the user.
@@ -23,21 +23,21 @@ POSTCONDITIONS: The user verifies that the iterations per thread is never off by
 
 IDENTIFIER: Thread-Display-Test
 TEST CASE: Ensures that there are as many threads as the user specifies.
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
   1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
 POSTCONDITIONS: The user verifies that the iterations per thread is displayed for the correct thread count.
 
 IDENTIFIER: Output-Has-Three-Decimals-Test
 TEST CASE: Test to make sure outputs always have three decimal places of precision.  No more, no less.
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
   1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
 POSTCONDITIONS: The user verifies that the output display is rounded up to three decimal places.
 
 IDENTIFIER:	Argument-Display-Test
 TEST CASE: Ensures that the strings inputed for "Good" and "Bad" arguments are properly displayed.
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
     1. Enter the correct command line arguments for GoodOption, BadOption, Iterations, Threads.. Example: Goat Car 101 5
 POSTCONDITIONS: The user verifies that the output display contains the two passed in string versions of "Good" and "Bad". In the example input, this would result in Goat, and Car being displayed.
@@ -45,7 +45,7 @@ POSTCONDITIONS: The user verifies that the output display contains the two passe
 IDENTIFIER:	Missing-Args-Test
 TEST CASE: Tests that if there are missing arguments then the program will prompt the user to input the correct arguments and then 
            gracefully terminate.
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS: The user inputs an invalid number of arguments for the program that are less than four.
                   - Examples include, 3,2,1, and 0.
 POSTCONDITIONS: The system will display the useage information for the program and shut down.
@@ -53,14 +53,14 @@ POSTCONDITIONS: The system will display the useage information for the program a
 IDENTIFIER:	Extra-Args-Test
 TEST CASE: Tests that if there are extra arguments then the program will prompt the user to input the correct arguments and then 
            gracefully terminate.
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS: The user inputs an invalid number of arguments for the program that are greater than four.
                   - Examples include, 5,6,500.
 POSTCONDITIONS: The system will display the useage information for the program and shut down.
 
 IDENTIFIER: Counter-Invalid-Args-Test
 TEST CASE: Ensures that the program can handle invalid arguments for the Counter Argument and exit gracefully.
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS: 
     1. The user inputs a valid number of arguments.  All arguments are valid except for the Counter argument.
     2. Continue restarting the program with invalid Counter arguments. Examples of invalid Counter arguments are: -1, Goat, 100000000000000000
@@ -68,7 +68,7 @@ POSTCONDITIONS: The program will notify the user of the invalid argument and why
 
 IDENTIFIER: Thread-Invalid-Args-Test
 TEST CASE: Ensures that the program can handle invalid arguments for the Counter Argument and exit gracefully.
-PRECONDITIONS:The user has ran the program.
+PRECONDITIONS:The user has run the program.
 EXECUTION STEPS:
     1. The user inputs a valid number of arguments.  All arguments are valid except for the Thread argument.
     2. Continue restarting the program with invalid Thread arguments. Examples of invalid Thread arguments are: -1, Goat, 100000000000000000
@@ -76,7 +76,7 @@ POSTCONDITIONS: The program will notify the user of the invalid argument and why
 
 IDENTIFIER:Good-Invalid-Args-Test
 TEST CASE: Ensure that the Good argument can handle potentially invalid args
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
     1. The user inputs a valid number of arguments.  All arguments are valid except for the Good argument.
     2. Continue restarting the program with potentially invalid Good arguments. Examples of potentially invalid Good arguments are: -1, 1.1, 1.1.1, \n, System.out.print("woot"), System.exit(0), 100000000000000000
@@ -84,7 +84,7 @@ POSTCONDITIONS: The program will notify the user of the invalid argument and why
 
 IDENTIFIER:Bad-Invalid-Args-Test
 TEST CASE: Ensure that the Bad argument can handle potentially invalid args
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
     1. The user inputs a valid number of arguments.  All arguments are valid except for the Bad argument.
     2. Continue restarting the program with potentially invalid Bad arguments. Examples of potentially invalid Bad arguments are: -1, 1.1, 1.1.1, \n, System.out.print("woot"), System.exit(0), 100000000000000000
@@ -92,7 +92,7 @@ POSTCONDITIONS: The program will notify the user of the invalid argument and why
 
 IDENTIFIER: Small-Nums-Test
 TEST CASE: Ensures that the program properly prompts the user if the number of iterations is 100 or less.
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
   1. The user inputs an "iterations" argument less than 100.
   2. The rest of the input for the program arrguments will be correct.
@@ -100,7 +100,7 @@ POSTCONDITIONS: The program shall issue a warning and ask the user if they wish 
 
 IDENTIFIER: Small-Num-Cont-Invalid-Input-Test
 TEST CASE: Tests the small numbers warning prompt can handle invalid inputs whithout crashing.
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
   1. Enter the correct command line arguments for GoodOption, BadOption, Threads, and enter in
      an iteration count of 100 or less. Example: Goat Car 98 5
@@ -110,7 +110,7 @@ POSTCONDITIONS: Upon each invalid input, the program continues to ask the user f
 
 IDENTIFIER: Small-Num-Cont-Valid-Input-Test
 TEST CASE: Tests that the small numbers warning prompt handles each valid input appropriately.
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
   1. Enter the correct command line arguments for GoodOption, BadOption, Threads, and enter in
      an iteration count of 100 or less. Example: Goat Car 98 5
@@ -122,7 +122,7 @@ POSTCONDITIONS:
 
 IDENTIFIER: Thread-Perfomance-Test
 TEST CASE: Test to ensure that program runs faster when more threads are used
-PRECONDITIONS: The user has ran the program.
+PRECONDITIONS: The user has run the program.
 EXECUTION STEPS: CURRENTLY UNSURE HOW TO APPROPRIATELY BLACK BOX TEST A SPEED COMPARISON
 POSTCONDITIONS: Program exits gracefully with statistics correctly shown.
 
