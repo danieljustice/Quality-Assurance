@@ -131,28 +131,28 @@ IDENTIFIER: Small-Nums-Test
 TEST CASE: Ensures that the program properly prompts the user if the number of iterations is 100 or less.
 PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
-  1. The user inputs an "iterations" argument less than 100.
-  2. The rest of the input for the program arrguments will be correct.
+  1. Enter java -jar .\GoatGoatCar.jar good bad 100 1
 POSTCONDITIONS: The program shall issue a warning and ask the user if they wish to continue.
 
 IDENTIFIER: Small-Num-Cont-Invalid-Input-Test
 TEST CASE: Tests the small numbers warning prompt can handle invalid inputs whithout crashing.
-PRECONDITIONS: The user has run the program.
+PRECONDITIONS: The user has run the program and entered an iteration number less than 100.
 EXECUTION STEPS:
-  1. Enter the correct command line arguments for GoodOption, BadOption, Threads, and enter in
-     an iteration count of 100 or less. Example: Goat Car 98 5
-  2. The user is prompted for "Y" or "N" input for continuing with less than 100 iterations.
-  3. The user inputs invalid data for this option.
+  1. Enter dog
+  2. Enter 5
+  3. Enter 5.5
+  4. Enter "space"
+  4. Enter Enter
 POSTCONDITIONS: Upon each invalid input, the program continues to ask the user for "Y" or "N" arguments.
 
 IDENTIFIER: Small-Num-Cont-Valid-Input-Test
 TEST CASE: Tests that the small numbers warning prompt handles each valid input appropriately.
-PRECONDITIONS: The user has run the program.
+PRECONDITIONS: The user has run the program and entered an iteration number less than 100.
 EXECUTION STEPS:
-  1. Enter the correct command line arguments for GoodOption, BadOption, Threads, and enter in
-     an iteration count of 100 or less. Example: Goat Car 98 5
-  2. The user is prompted for "Y" or "N" input for continuing with less than 100 iterations.
-  3. The user inputs "Y","N","y",or "n" for this option. 
+  1. Enter Y
+  2. Enter y
+  3. Enter N
+  4. Enter n
 POSTCONDITIONS: 
   1. If the user selects "Y" or "y", the program will continue to execute.
   2. If the user selects "N" or "n", the program will exit.
@@ -160,12 +160,8 @@ POSTCONDITIONS:
 IDENTIFIER: Thread-Perfomance-Test
 TEST CASE: Test to ensure that program runs faster when more threads are used
 PRECONDITIONS: The user has run the program.
-EXECUTION STEPS: CURRENTLY UNSURE HOW TO APPROPRIATELY BLACK BOX TEST A SPEED COMPARISON
-POSTCONDITIONS: Program exits gracefully with statistics correctly shown.
-
-
-IDENTIFIER:
-TEST CASE: 
-PRECONDITIONS:
-EXECUTION STEPS:
-POSTCONDITIONS:
+EXECUTION STEPS: 
+ 1. Enter java -jar .\GoatGoatCar.jar good bad 100000 10
+ 2. Enter java -jar .\GoatGoatCar.jar good bad 100000 1000000
+ 3. The user then compares the speed of the two runs.
+POSTCONDITIONS: The comparison is displayed to the user.
