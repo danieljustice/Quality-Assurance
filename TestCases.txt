@@ -159,9 +159,9 @@ POSTCONDITIONS:
 
 IDENTIFIER: Thread-Perfomance-Test
 TEST CASE: Test to ensure that program runs faster when more threads are used
-PRECONDITIONS: The user has run the program.
+PRECONDITIONS: The user has opened a powershell command line in windows.
 EXECUTION STEPS: 
- 1. Enter java -jar .\GoatGoatCar.jar good bad 100000 10
- 2. Enter java -jar .\GoatGoatCar.jar good bad 100000 1000000
+ 1. Enter Measure-Command {java -jar good bad 100000 10}
+ 2. Enter Measure-Command {java -jar good bad 100000 100000}
  3. The user then compares the speed of the two runs.
-POSTCONDITIONS: The comparison is displayed to the user.
+POSTCONDITIONS: The speed of the larger thread program run will be faster than the shorter thread run.
