@@ -128,10 +128,10 @@ EXECUTION STEPS:
 POSTCONDITIONS: The program will notify the user of the invalid argument and why it is invalid. It will then exit.
 
 IDENTIFIER: Small-Nums-Test
-TEST CASE: Ensures that the program properly prompts the user if the number of iterations is 100 or less.
+TEST CASE: Ensures that the program properly prompts the user if the number of iterations is less than 100.
 PRECONDITIONS: The user has run the program.
 EXECUTION STEPS:
-  1. Enter java -jar .\GoatGoatCar.jar good bad 100 1
+  1. Enter java -jar .\GoatGoatCar.jar good bad 99 1
 POSTCONDITIONS: The program shall issue a warning and ask the user if they wish to continue.
 
 IDENTIFIER: Small-Num-Cont-Invalid-Input-Test
