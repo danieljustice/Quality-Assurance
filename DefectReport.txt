@@ -32,3 +32,13 @@
           1) Run program with "java -jar .\GoatGoatCar.jar good bad 2500000000 10"
  EXPECTED BEHAVIOR: The program should execute with the iterations that were input.
  OBSERVED BEHAVIOR: The program asks the user to input an integer number greater than zero.
+
+ IDENTIFIER:DEFECT-5
+ SUMMARY: The program runs slower with more threads.
+ DESCRIPTION: When the user runs the program twice with a speed measuring technique, the run a larger amount of threads takes much longer.
+ REPRODUCTION STEPS:
+           1) Enter Measure-Command {java -jar good bad 100000 10}
+           2) Enter Measure-Command {java -jar good bad 100000 100000}
+           3) Compare the speeds. The first speed is around 392 ms. The second is around 8075ms.
+ EXPECTED BEHAVIOR: The second run of the program should be faster.
+ OBSERVED BEHAVIOR: The first run of the program is faster.
